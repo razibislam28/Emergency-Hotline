@@ -19,31 +19,46 @@
   </head>
   <body class="bg-[#f5fff6]">
     <!-- navbar -->
-    <div class="navbar bg-white shadow px-6 sticky top-0 z-50">
-      <div class="flex-1">
-        <img src="assets/logo-dark.png" alt="logo" class="w-10 h-10 mr-2" />
-        <a class="text-xl font-bold">Emergency Service</a>
-      </div>
-      <div class="flex-none gap-6">
-        <!-- Heart -->
-        <div class="flex items-center gap-1">
-          <img src="assets/heart.png" class="w-6 h-6" />
-          <span id="heartCount">0</span>
-        </div>
-        <!-- Coin -->
-        <div class="flex items-center gap-1">
-          <img src="assets/coin.png" class="w-6 h-6" />
-          <span id="coinCount">100</span>
-        </div>
-        <!-- Copy  -->
-
-        <div
-          class="pill px-3 py-1.5 rounded-full text-sm flex justify-center items-center gap-2 text-white bg-[#00a63e] w-[127px] h-[52px]"
+    <div
+      class="flex justify-between ju navbar bg-white shadow px-6 sticky top-0 z-50"
+    >
+      <div>
+        <img src="assets/logo.png" alt="logo" class="w-[70px] h-[70px] mr-2" />
+        <a class="text-xl font-bold w-[135px] h-[44px] text-[#006747]"
+          >Emergency Service</a
         >
-          <span id="copyCount">0</span>
-          <span class="hidden sm:inline font-semibold">Copy</span>
+      </div>
+      <div class="flex justify-between">
+        <div class="flex gap-6">
+          <!-- Heart -->
+          <div class="flex items-center gap-1">
+            <img src="assets/heart.png" class="w-6 h-6" />
+            <span id="heartCount">0</span>
+          </div>
+          <!-- Coin -->
+          <div class="flex items-center gap-1">
+            <img src="assets/coin.png" class="w-6 h-6" />
+            <span id="coinCount">100</span>
+          </div>
+          <!-- Copy  -->
+
+          <div
+            class="pill px-3 py-1.5 rounded-full text-sm flex justify-center items-center gap-2 text-white bg-[#00a63e] w-[127px] h-[52px]"
+          >
+            <span id="copyCount">0</span>
+            <span class="hidden sm:inline font-semibold">Copy</span>
+          </div>
         </div>
       </div>
     </div>
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-r from-[#006747] to-[#00a63e] text-white py-12 text-center"
+    >
+      <img src="assets/logo-dark.png" class="mx-auto w-20 h-20 mb-4" />
+      <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
+      <p class="mt-2">Government & NGO Emergency Services at Your Fingertip</p>
+    </section>
+    <script src="./index.js"></script>
   </body>
 </html>

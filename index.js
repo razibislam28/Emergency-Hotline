@@ -85,3 +85,11 @@ function makeCall() {
 document.querySelectorAll(".callBtn").forEach((btn) => {
   btn.addEventListener("click", makeCall);
 });
+// ----------------------------
+// CLEAR HISTORY
+// ----------------------------
+function clearHistory() {
+  historyList.innerHTML = "";
+}
+
+clearBtn.addEventListener("click", clearHistory);

@@ -6,7 +6,7 @@
 4. What is **Event Delegation** in JavaScript? Why is it useful?
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
----
+-----------------------------------------Answer-------------------------------------------------------------------------
 
 1. Differences between getElementById, getElementsByClassName, and querySelector, querySelectorAll. As an example getElementById("idName"). It is used when you want to access an element and there is an id attributed to it which is unique and must be used to access the element. It returns only one element or null if it does not exist. getElementsByClassName("className") returns a live html collection of all the elements which for the class. It is live in the sense that if new elements which have that class are added, the list gets updated. querySelector("css-selector") returns the first element that is found for the given css selector which can be an id, class, tag or even an attribute. querySelectorAll("css-selector"). This retrieves a static NodeList of all the elements that were matched. Static means that it is not dynamic and does not update if there are any changes in the DOM.
 

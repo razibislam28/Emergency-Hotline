@@ -20,32 +20,46 @@
   <body class="bg-[#f5fff6]">
     <!-- navbar -->
     <div
-      class="flex justify-between navbar bg-white shadow px-6 sticky top-0 z-50"
+      class="flex flex-wrap justify-between navbar bg-white shadow px-4 sm:px-6 sticky top-0 z-50"
     >
       <div class="flex items-center gap-2">
-        <img src="assets/logo.png" alt="logo" class="w-[70px] h-[70px]" />
-        <a class="text-xl font-bold w-[135px] h-[44px] text-[#006747]">
+        <img
+          src="assets/logo.png"
+          alt="logo"
+          class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px]"
+        />
+        <a
+          class="text-lg sm:text-xl font-bold w-[135px] h-[44px] text-[#006747]"
+        >
           Emergency Service
         </a>
       </div>
 
-      <div class="flex justify-between">
-        <div class="flex gap-6">
+      <div class="flex justify-between mt-2 sm:mt-0">
+        <div class="flex gap-4 sm:gap-6 items-center">
           <!-- Heart -->
           <div class="flex items-center gap-1">
-            <img src="assets/heart.png" class="w-6 h-6" alt="heart" />
+            <img
+              src="assets/heart.png"
+              class="w-5 h-5 sm:w-6 sm:h-6"
+              alt="heart"
+            />
             <span id="heartCount">0</span>
           </div>
 
           <!-- Coin -->
           <div class="flex items-center gap-1">
-            <img src="assets/coin.png" class="w-6 h-6" alt="coin" />
+            <img
+              src="assets/coin.png"
+              class="w-5 h-5 sm:w-6 sm:h-6"
+              alt="coin"
+            />
             <span id="coinCount">100</span>
           </div>
 
           <!-- Copy -->
           <div
-            class="pill px-3 py-1.5 rounded-full text-sm flex justify-center items-center gap-2 text-white bg-[#00a63e] w-[127px] h-[52px]"
+            class="pill px-3 py-1.5 rounded-full text-sm flex justify-center items-center gap-2 text-white bg-[#00a63e] w-[100px] sm:w-[127px] h-[40px] sm:h-[52px]"
           >
             <span id="copyCount">0</span>
             <span class="hidden sm:inline font-semibold">Copy</span>
@@ -56,21 +70,27 @@
 
     <!-- Hero Section -->
     <section
-      class="bg-gradient-to-r from-[#006747] to-[#00a63e] text-white py-12 text-center"
+      class="bg-gradient-to-r from-[#006747] to-[#00a63e] text-white py-10 sm:py-12 text-center px-4"
     >
       <img
         src="assets/logo-dark.png"
-        class="mx-auto w-20 h-20 mb-4"
+        class="mx-auto w-16 h-16 sm:w-20 sm:h-20 mb-4"
         alt="logo"
       />
-      <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
-      <p class="mt-2">Government & NGO Emergency Services at Your Fingertip</p>
+      <h1 class="text-2xl sm:text-3xl font-bold">
+        Emergency Service Directory
+      </h1>
+      <p class="mt-2 text-sm sm:text-base">
+        Government & NGO Emergency Services at Your Fingertip
+      </p>
     </section>
 
     <!-- Main Content -->
-    <div class="flex gap-4 p-[24px]">
+    <div class="flex flex-col lg:flex-row gap-4 p-4 sm:p-6">
       <!-- Card Section -->
-      <div class="grid grid-cols-3 grid-rows-3 gap-6 p-6 w-full h-[1140px]">
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6 w-full"
+      >
         <div class="card bg-[#ffffff] shadow-lg p-4">
           <div class="flex justify-between items-start">
             <figure>
@@ -106,15 +126,17 @@
             </div>
 
             <!-- Bottom actions -->
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -145,15 +167,17 @@
                 >P</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -189,15 +213,17 @@
                 >Fire</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -231,15 +257,17 @@
                 >H</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -273,15 +301,17 @@
                 >H</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -315,15 +345,17 @@
                 >G</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -357,15 +389,17 @@
                 >E</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -399,15 +433,17 @@
                 >N</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -441,15 +477,17 @@
                 >T</span
               >
             </div>
-            <div class="flex justify-between items-center w-full mt-4">
+            <div
+              class="flex flex-col sm:flex-row justify-between items-center w-full mt-4 gap-2"
+            >
               <button
-                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                class="btn btn-sm btn-outline copyBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-number="9"
               >
                 <i class="fa fa-copy"></i> Copy
               </button>
               <button
-                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-full sm:w-[150px] h-[40px] md:w-[48%]"
                 data-name="N"
                 data-number="9"
               >
@@ -461,7 +499,9 @@
       </div>
 
       <!-- Call History Section -->
-      <div class="bg-white shadow-lg p-4 rounded-lg w-[400px] h-[1088px] mt-7">
+      <div
+        class="bg-white shadow-lg p-4 rounded-lg w-full lg:w-[400px] lg:h-[1100px] mt-4 lg:mt-7"
+      >
         <div class="flex justify-between items-center mb-3">
           <h2 class="text-lg font-bold">
             <i class="fa fa-clock"></i> Call History

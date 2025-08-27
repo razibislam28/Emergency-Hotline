@@ -20,28 +20,30 @@
   <body class="bg-[#f5fff6]">
     <!-- navbar -->
     <div
-      class="flex justify-between ju navbar bg-white shadow px-6 sticky top-0 z-50"
+      class="flex justify-between navbar bg-white shadow px-6 sticky top-0 z-50"
     >
-      <div>
-        <img src="assets/logo.png" alt="logo" class="w-[70px] h-[70px] mr-2" />
-        <a class="text-xl font-bold w-[135px] h-[44px] text-[#006747]"
-          >Emergency Service</a
-        >
+      <div class="flex items-center gap-2">
+        <img src="assets/logo.png" alt="logo" class="w-[70px] h-[70px]" />
+        <a class="text-xl font-bold w-[135px] h-[44px] text-[#006747]">
+          Emergency Service
+        </a>
       </div>
+
       <div class="flex justify-between">
         <div class="flex gap-6">
           <!-- Heart -->
           <div class="flex items-center gap-1">
-            <img src="assets/heart.png" class="w-6 h-6" />
+            <img src="assets/heart.png" class="w-6 h-6" alt="heart" />
             <span id="heartCount">0</span>
           </div>
+
           <!-- Coin -->
           <div class="flex items-center gap-1">
-            <img src="assets/coin.png" class="w-6 h-6" />
+            <img src="assets/coin.png" class="w-6 h-6" alt="coin" />
             <span id="coinCount">100</span>
           </div>
-          <!-- Copy  -->
 
+          <!-- Copy -->
           <div
             class="pill px-3 py-1.5 rounded-full text-sm flex justify-center items-center gap-2 text-white bg-[#00a63e] w-[127px] h-[52px]"
           >
@@ -51,14 +53,430 @@
         </div>
       </div>
     </div>
+
     <!-- Hero Section -->
     <section
       class="bg-gradient-to-r from-[#006747] to-[#00a63e] text-white py-12 text-center"
     >
-      <img src="assets/logo-dark.png" class="mx-auto w-20 h-20 mb-4" />
+      <img
+        src="assets/logo-dark.png"
+        class="mx-auto w-20 h-20 mb-4"
+        alt="logo"
+      />
       <h1 class="text-3xl font-bold">Emergency Service Directory</h1>
       <p class="mt-2">Government & NGO Emergency Services at Your Fingertip</p>
     </section>
+
+    <!-- Main Content -->
+    <div class="flex gap-4 p-[24px]">
+      <!-- Card Section -->
+      <div class="grid grid-cols-3 grid-rows-3 gap-6 p-6 w-full h-[1140px]">
+        <div class="card bg-[#ffffff] shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="icon"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+
+          <!-- Body -->
+          <div class="card-body text-left px-0 pt-4">
+            <!-- Title -->
+            <h2 class="text-base font-bold text-gray-900 leading-tight">N</h2>
+            <p class="text-sm text-gray-500">N</p>
+
+            <!-- Big number -->
+            <p class="text-3xl font-bold mt-3">9</p>
+
+            <!-- Badge -->
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+              >
+                A
+              </span>
+            </div>
+
+            <!-- Bottom actions -->
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img src="./assets/police.png" class="w-10 h-10" alt="fire" />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">P</h2>
+            <p class="text-sm text-gray-500">P</p>
+            <p class="text-3xl font-bold mt-3">9</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >P</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/fire-service.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">
+              Fire Service Number
+            </h2>
+            <p class="text-sm text-gray-500">Fire Service</p>
+            <p class="text-3xl font-bold mt-3">999</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >Fire</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/ambulance.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">A</h2>
+            <p class="text-sm text-gray-500">A</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >H</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">W</h2>
+            <p class="text-sm text-gray-500">W</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >H</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">A</h2>
+            <p class="text-sm text-gray-500">A</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >G</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">E</h2>
+            <p class="text-sm text-gray-500">E</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >E</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">B</h2>
+            <p class="text-sm text-gray-500">B</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >N</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-white shadow-lg p-4">
+          <div class="flex justify-between items-start">
+            <figure>
+              <div class="p-3 rounded-2xl bg-[#FFE9E9] inline-flex">
+                <img
+                  src="./assets/emergency.png"
+                  class="w-10 h-10"
+                  alt="fire"
+                />
+              </div>
+            </figure>
+            <button class="btn btn-ghost btn-sm likeBtn">
+              <i class="fa fa-heart text-gray-400"></i>
+            </button>
+          </div>
+          <div class="card-body text-left px-0 pt-4">
+            <h2 class="text-base font-bold text-gray-900 leading-tight">B</h2>
+            <p class="text-sm text-gray-500">B</p>
+            <p class="text-3xl font-bold mt-3">1</p>
+            <div class="mt-2">
+              <span
+                class="badge bg-gray-100 text-gray-600 px-3 py-1 rounded-full"
+                >T</span
+              >
+            </div>
+            <div class="flex justify-between items-center w-full mt-4">
+              <button
+                class="btn btn-sm btn-outline copyBtn w-[150px] h-[40px]"
+                data-number="9"
+              >
+                <i class="fa fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn btn-sm bg-[#00a63e] text-white callBtn w-[150px] h-[40px]"
+                data-name="N"
+                data-number="9"
+              >
+                <i class="fa fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Call History Section -->
+      <div class="bg-white shadow-lg p-4 rounded-lg w-[400px] h-[1088px] mt-7">
+        <div class="flex justify-between items-center mb-3">
+          <h2 class="text-lg font-bold">
+            <i class="fa fa-clock"></i> Call History
+          </h2>
+          <button id="clearHistory" class="btn btn-sm btn-outline btn-error">
+            Clear
+          </button>
+        </div>
+        <ul
+          id="historyList"
+          class="space-y-2 text-sm max-h-96 overflow-y-auto"
+        ></ul>
+      </div>
+    </div>
+
     <script src="./index.js"></script>
   </body>
 </html>

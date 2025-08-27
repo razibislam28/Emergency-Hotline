@@ -20,3 +20,28 @@ const likeButtons = document.querySelectorAll(".likeBtn");
 likeButtons.forEach((button) => {
   button.addEventListener("click", updateHearts);
 });
+
+// COPY BUTTON
+function copyNumber() {
+  // Get the card body of this button
+  const cardBody = this.closest(".card-body");
+
+  // Get the  name  and the displayed number
+  const serviceName = cardBody.querySelector("h2").textContent;
+  const number = cardBody.querySelector("p.text-3xl").textContent;
+
+  // Copy number to clipboard
+  navigator.clipboard.writeText(number);
+
+  // Alert with service name and number
+  alert(`${serviceName} - ${number} copied!`);
+
+  // Update copy count
+  copyCount++;
+  copyCountEl.textContent = copyCount;
+}
+
+// Attach to all copy buttons
+document.querySelectorAll(".copyBtn").forEach((btn) => {
+  btn.addEventListener("click", copyNumber);
+});
